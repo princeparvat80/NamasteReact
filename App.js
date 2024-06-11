@@ -9,8 +9,8 @@ import ReactDOM from "react-dom";
 //--------------------------------------------------------------------------------------------------------------
 
 // This is how we create element by JavaScript
-const heading = React.createElement("h1", {}, "Namaste Prince Parvat"); //This object in this line will use to give the id to the elemnet.
-const heading2 = React.createElement("h2", {}, "Namaste Prince Parvat 2");
+const heading = React.createElement("h1", {}, "Learn"); //This object in this line will use to give the id to the elemnet.
+const heading2 = React.createElement("h2", {}, "Learn 2");
 const container = React.createElement("div", { id: "container" }, [
   heading,
   heading2,
