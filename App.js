@@ -1,3 +1,5 @@
+import React from "react";
+import ReactDOM from "react-dom";
 //--------------------------------------------------------------------------------------------------------------
 //     This is how we create element by JavaScript
 //     const heading = document.createElement("h1");
