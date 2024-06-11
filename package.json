@@ -1,0 +1,22 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "Prince learining React and it Bundlers",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/princeparvat80/NamasteReact.git"
+  },
+  "author": "Prince Parvat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/princeparvat80/NamasteReact/issues"
+  },
+  "homepage": "https://github.com/princeparvat80/NamasteReact#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
