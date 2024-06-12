@@ -36,7 +36,7 @@ const Header = () => {
   return (
     <div className="header">
       <Title />
-      <div >
+      <div>
         <ul className="nav">
           <li className="nav-button">Home</li>
           <li className="nav-button">About</li>
@@ -49,28 +49,22 @@ const Header = () => {
 };
 
 const Body = () => {
-  return(
-    <h3>Body</h3>
-  )
-}
+  return <h3>Body</h3>;
+};
 
 const Footer = () => {
-  return(
-    <h3>Footer</h3>
-  )
-}
+  return <h3>Footer</h3>;
+};
 
 const AppLayout = () => {
-  return(
+  return (
     <>
-    <Header />
-    <Body />
-    <Footer />
+      <Header />
+      <Body />
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-const fucntionalComponentRoot = ReactDOM.createRoot(
-  document.getElementById("root")
-);
-fucntionalComponentRoot.render(<AppLayout />);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<AppLayout />);
