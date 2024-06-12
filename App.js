@@ -29,9 +29,9 @@ const heading = (
 
 // Functional Component
 const Title = () => (
-    <h1 id="h1" key="key1">
+    <h2 id="h1" key="key1">
       Learing JSX Title
-    </h1>
+    </h2>
   );
 
 const HeaderComponent = () => {
@@ -39,7 +39,7 @@ const HeaderComponent = () => {
     <div>
       {heading}
       <Title /> 
-      <h1>Functional component</h1>
+      <h3>Functional component</h3>
     </div>
   );
 };
