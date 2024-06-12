@@ -1,3 +1,40 @@
-#container {
-    background-color: rgb(234, 255, 0);
-}
+/* Header container */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #abcff4; /* Light gray background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Navigation container */
+  .nav {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+  }
+  
+  /* Navigation buttons */
+  .nav-button {
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff; /* Blue background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  

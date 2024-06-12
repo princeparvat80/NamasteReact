@@ -14,37 +14,63 @@
 // //   heading2,
 // // ]);
 // // --------------------------------------------------------------------------------------------------------------
-
+// // This is how we create element by JSX
+// // const heading = (
+// //   <h1 id="h1" key="key1">
+// //     Learing JSX
+// //   </h1>
+// // );
+// // const rootElement = ReactDOM.createRoot(document.getElementById("root"));
+// // rootElement.render(heading);
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// This is how we create element by JSX
-const heading = (
-  <h1 id="h1" key="key1">
-    Learing JSX
-  </h1>
-);
-// const rootElement = ReactDOM.createRoot(document.getElementById("root"));
-// rootElement.render(heading);
-
 // Functional Component
 const Title = () => (
-    <h2 id="h1" key="key1">
-      Learing JSX Title
-    </h2>
-  );
+  <h2 id="h1" key="key1" className="logo">
+    Prince Restraunt
+  </h2>
+);
 
-const HeaderComponent = () => {
+const Header = () => {
   return (
-    <div>
-      {heading}
-      <Title /> 
-      <h3>Functional component</h3>
+    <div className="header">
+      <Title />
+      <div >
+        <ul className="nav">
+          <li className="nav-button">Home</li>
+          <li className="nav-button">About</li>
+          <li className="nav-button">Contact</li>
+          <li className="nav-button">Cart</li>
+        </ul>
+      </div>
     </div>
   );
 };
 
+const Body = () => {
+  return(
+    <h3>Body</h3>
+  )
+}
+
+const Footer = () => {
+  return(
+    <h3>Footer</h3>
+  )
+}
+
+const AppLayout = () => {
+  return(
+    <>
+    <Header />
+    <Body />
+    <Footer />
+    </>
+  )
+}
+
 const fucntionalComponentRoot = ReactDOM.createRoot(
   document.getElementById("root")
 );
-fucntionalComponentRoot.render(<HeaderComponent />);
+fucntionalComponentRoot.render(<AppLayout />);
